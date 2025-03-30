@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Menentukan karakter set sebagai UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mengatur tampilan responsif untuk perangkat mobile -->
+    <title>Selamat Hari Raya</title>
+    <!-- Judul halaman yang akan ditampilkan di tab browser -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan file CSS untuk styling -->
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Kontainer utama untuk seluruh elemen -->
+      <!-- Kontainer untuk input nama -->
+      <div id="nameInputContainer" class="kartu">
+        <h2>
+          Hallo! ini adalah program <br />
+          yang di buat oleh <br />
+          Gunawan Wijayanto <br />
+        </h2>
+        <input type="text" id="nameInput" placeholder="Masukkan nama kamu" />
+        <br />
+        <!-- Input untuk memasukkan nama pengguna -->
+        <button id="okButton">OK</button>
+        <!-- Tombol untuk mengkonfirmasi nama -->
+        <div class="webku">
+          <h3>
+            Website : <a href="https://gunawan-ten.vercel.app/">Gunawan</a>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Kotak pesan sapaan, disembunyikan secara default -->
+      <div class="message-box" id="greetingMessageBox" style="display: none">
+        <p id="greetingMessage"></p>
+        <!-- Elemen untuk menampilkan pesan sapaan -->
+      </div>
+
+      <!-- Kontainer untuk tombol Next, disembunyikan secara default -->
+      <div
+        class="button-container"
+        id="greetingButtonContainer"
+        style="display: none"
+      >
+        <button class="next-button" id="nextButton">Next</button>
+        <!-- Tombol untuk melanjutkan ke pesan berikutnya -->
+      </div>
+
+      <!-- Kontainer untuk gambar profil, disembunyikan secara default -->
+      <div class="profile-pic" id="profilePic" style="display: none">
+        <img
+          src="https://feeldreams.github.io/pusn.gif"
+          alt="Profile Picture"
+        />
+        <!-- Gambar profil yang akan ditampilkan -->
+      </div>
+
+      <!-- Kotak pesan utama, disembunyikan secara default -->
+      <div class="message-box" id="messageBox" style="display: none">
+        <p>hii kamu 😍</p>
+        <!-- Pesan pertama yang akan ditampilkan -->
+        <p>ga kerasa ya..</p>
+        <!-- Pesan kedua -->
+        <p>udah mau lebaran aja :(</p>
+        <!-- Pesan ketiga -->
+      </div>
+
+      <!-- Kontainer untuk tombol geser, disembunyikan secara default -->
+      <div class="button-container" id="buttonContainer" style="display: none">
+        <button class="swipe-button" id="swipeButton">Geser 👉</button>
+        <!-- Tombol untuk menggeser pesan -->
+      </div>
+
+      <!-- Konten Ulang Tahun, disembunyikan secara default -->
+      <div
+        class="birthday-container"
+        id="birthdayContainer"
+        style="display: none"
+      >
+        <h1>Selamat Hari Rayaaa 🥳!</h1>
+        <img src="uang.png" alt="" />
+        <p class="teks">
+          tidak bisa cash bisa lewat dna loh😆
+          <a href="https://link.dana.id/minta/2vskmw2oh4">Dana</a>
+        </p>
+        <audio id="birthdaySong" src="sound.mp3" autoplay loop></audio>
+        <canvas id="fireworksCanvas"></canvas>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Menghubungkan file JavaScript untuk logika interaktif -->
+  </body>
+</html>

@@ -1,0 +1,249 @@
+/* Mengatur gaya untuk elemen body */
+body {
+  margin: 0; /* Menghilangkan margin default */
+  padding: 0; /* Menghilangkan padding default */
+  font-family: Arial, sans-serif; /* Mengatur jenis font yang digunakan */
+  display: flex; /* Menggunakan Flexbox untuk penataan elemen */
+  justify-content: center; /* Mengatur konten agar berada di tengah secara horizontal */
+  align-items: center; /* Mengatur konten agar berada di tengah secara vertikal */
+  height: 100vh; /* Mengatur tinggi body menjadi 100% dari viewport */
+  /* background-color: gray; Mengatur warna latar belakang menjadi abu-abu */
+  background-image: url("bgrnd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Mengatur gaya untuk kontainer utama */
+.container {
+  text-align: center; /* Mengatur teks agar berada di tengah */
+  color: white; /* Mengatur warna teks menjadi putih */
+}
+
+/* Mengatur gaya untuk kontainer input nama */
+#nameInputContainer {
+  margin-bottom: 20px; /* Menambahkan jarak bawah */
+}
+
+/* Mengatur gaya untuk kotak pesan */
+.message-box {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Mengatur latar belakang dengan transparansi */
+  color: white; /* Mengatur warna teks menjadi putih */
+  padding: 20px; /* Menambahkan ruang di dalam kotak pesan */
+  border-radius: 10px; /* Mengatur sudut melengkung */
+  display: inline-block; /* Mengatur kotak agar tidak memenuhi lebar penuh */
+  transition: opacity 0.5s ease-in-out; /* Menambahkan efek transisi untuk opacity */
+}
+
+/* Mengatur gaya untuk kontainer tombol */
+.button-container {
+  margin-top: 20px; /* Menambahkan jarak atas */
+}
+
+/* Mengatur gaya untuk tombol Next dan Swipe */
+.next-button,
+.swipe-button {
+  background-color: #007bff; /* Mengatur warna latar belakang tombol */
+  color: white; /* Mengatur warna teks tombol menjadi putih */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Mengatur sudut melengkung */
+  padding: 10px 20px; /* Menambahkan ruang di dalam tombol */
+  cursor: pointer; /* Menampilkan kursor pointer saat hover */
+}
+
+/* Mengatur efek hover untuk tombol */
+.next-button:hover,
+.swipe-button:hover {
+  background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+/* Mengatur gaya untuk kontainer gambar profil */
+.profile-pic {
+  margin-bottom: 20px; /* Menambahkan jarak bawah */
+}
+
+/* Mengatur gaya untuk gambar profil */
+.profile-pic img {
+  width: 100px; /* Mengatur lebar gambar */
+  height: 100px; /* Mengatur tinggi gambar */
+  border-radius: 50%; /* Mengatur gambar menjadi bulat */
+  border: 2px solid white; /* Menambahkan border putih di sekitar gambar */
+}
+
+/* Mengatur gaya untuk konten ulang tahun */
+.birthday-container {
+  display: flex; /* Menggunakan Flexbox untuk penataan elemen */
+  flex-direction: column; /* Mengatur arah elemen menjadi kolom */
+  align-items: center; /* Mengatur elemen agar berada di tengah secara horizontal */
+  justify-content: center; /* Mengatur elemen agar berada di tengah secara vertikal */
+  color: white; /* Mengatur warna teks menjadi putih */
+}
+
+/* Mengatur gaya untuk efek kembang api */
+#fireworks {
+  width: 100%; /* Mengatur lebar menjadi 100% dari kontainer */
+  height: 300px; /* Mengatur tinggi sesuai kebutuhan */
+  background-image: url("https://media.giphy.com/media/3o6gDkZyWz6w5H1H4o/giphy.gif"); /* Mengatur gambar latar belakang kembang api */
+  background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh kontainer */
+  position: relative; /* Mengatur posisi relatif untuk elemen anak */
+  animation: fireworks-animation 1s ease-in-out forwards; /* Menambahkan animasi kembang api */
+}
+
+/* Mengatur gaya untuk kartu input nama */
+.kartu {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Mengatur warna latar belakang transparan */
+  border-radius: 15px; /* Mengatur sudut melengkung */
+  padding: 20px; /* Menambahkan ruang di dalam kartu */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan untuk efek kedalaman */
+  /* display: inline-block; Membuat kartu tidak memenuhi lebar penuh */
+  /* margin-bottom: 20px; Menambahkan jarak bawah antara kartu dan elemen di bawahnya */
+  color: white;
+  text-align: center;
+  width: 330px; /* Atur lebar kartu */
+}
+
+.webku h3 {
+  font-size: 1rem;
+  color: #0056b3;
+}
+
+.webku a {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.webku a:hover {
+  background-color: #0056b3;
+}
+
+/* Mengatur gaya untuk input nama */
+#nameInput {
+  padding: 10px; /* Menambahkan ruang di dalam input */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Mengatur sudut melengkung pada input */
+  width: 200px; /* Mengatur lebar input */
+  margin-right: 10px; /* Menambahkan jarak antara input dan tombol */
+  font-size: 16px; /* Mengatur ukuran font pada input */
+  color: white; /* Mengatur warna teks input */
+  background-color: rgba(
+    255,
+    138,
+    138,
+    0.8
+  ); /* Mengatur warna latar belakang input dengan transparansi */
+  transition: background-color 0.3s; /* Menambahkan efek transisi untuk perubahan warna latar belakang saat hover */
+}
+
+/* Mengatur gaya saat input dalam keadaan fokus */
+#nameInput:focus {
+  outline: none; /* Menghilangkan outline default saat fokus */
+  background-color: turquoise; /* Mengubah warna latar belakang menjadi putih saat fokus */
+}
+
+/* Mengatur gaya untuk tombol OK */
+#okButton {
+  padding: 10px 20px; /* Menambahkan ruang di dalam tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Mengatur sudut melengkung pada tombol */
+  background-color: #007bff; /* Mengatur warna latar belakang tombol */
+  color: white; /* Mengatur warna teks tombol menjadi putih */
+  cursor: pointer; /* Menampilkan kursor pointer saat hover */
+  font-size: 16px; /* Mengatur ukuran font pada tombol */
+  transition: background-color 0.3s; /* Menambahkan efek transisi untuk perubahan warna latar belakang saat hover */
+  margin-top: 10px; /* Menambahkan jarak atas pada tombol */
+}
+
+/* Mengatur efek hover untuk tombol OK */
+#okButton:hover {
+  background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+/* Mengatur gaya untuk kotak pesan */
+.message-box {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Menambahkan transisi untuk transformasi dan opacity */
+}
+
+h2 {
+  color: #0056b3;
+  font-family: "comic sans ms";
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #0056b3;
+  font-family: "comic sans ms";
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent mouse events on the canvas */
+}
+
+#greetingMessage {
+  font-size: 1rem;
+}
+
+.birthday-container img {
+  width: 250px;
+  height: 150px;
+}
+
+.birthday-container p {
+  color: #0056b3;
+  font-family: "comic sans ms";
+  text-shadow: 0 4px 20px rgba(255, 255, 255, 5);
+  text-align: center;
+  font-weight: bold;
+}
+
+.birthday-container p a {
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: bold;
+  background-color: blue;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 5px;
+  font-size: 0.8rem;
+}
+
+.birthday-container p a:hover {
+  background-color: rgb(0, 0, 72);
+}
+
+/* Animasi untuk efek kembang api
+@keyframes fireworks-animation {
+  0% {
+    opacity: 0; Memulai dengan opacity 0 (tidak terlihat)
+  }
+  100% {
+    opacity: 1; Mengakhiri dengan opacity 1 (sepenuhnya terlihat)
+  }
+} */
